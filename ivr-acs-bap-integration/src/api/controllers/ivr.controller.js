@@ -18,12 +18,34 @@ exports.handleInput = async (req, res) => {
     let response;
     switch (inputValue) {
       case "1":
-        // Forward to BAP for balance inquiry
         response = await bapService.getBalance(sessionId);
         break;
       case "2":
-        // Trigger agent transfer in ACS
         response = await acsService.transferToAgent(sessionId);
+        break;
+      case "3":
+        response = await bapService.getMiniStatement(sessionId);
+        break;
+      case "4":
+        response = await acsService.reportLostCard(sessionId);
+        break;
+      case "5":
+        response = await acsService.activateNewCard(sessionId);
+        break;
+      case "6":
+        response = await bapService.payUtilityBill(sessionId);
+        break;
+      case "7":
+        response = await acsService.updateContactDetails(sessionId);
+        break;
+      case "8":
+        response = await bapService.getLoanDetails(sessionId);
+        break;
+      case "9":
+        response = await acsService.reportSuspiciousTransaction(sessionId);
+        break;
+      case "10":
+        response = await bapService.requestEStatement(sessionId);
         break;
       default:
         response = {

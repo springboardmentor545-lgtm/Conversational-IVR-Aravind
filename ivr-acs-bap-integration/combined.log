@@ -2,3 +2,96 @@
 {"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-05T07:45:06.299Z"}
 {"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-05T08:36:36.331Z"}
 {"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-05T08:36:44.901Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-07T04:48:18.386Z"}
+{"level":"info","message":"Received input from IVR for session 12345: 1","timestamp":"2025-09-07T05:04:50.200Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"12345","timestamp":"2025-09-07T05:04:50.267Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:05:04:50 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 67 \"-\" \"axios/1.11.0\"","timestamp":"2025-09-07T05:04:50.277Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:05:04:50 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 67 \"-\" \"PostmanRuntime/7.45.0\"","timestamp":"2025-09-07T05:04:50.288Z"}
+{"level":"info","message":"Received input from IVR for session 67890: 2","timestamp":"2025-09-07T05:06:26.625Z"}
+{"level":"info","message":"Simulating ACS agent transfer for session: 67890","timestamp":"2025-09-07T05:06:26.626Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:05:06:26 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 84 \"-\" \"PostmanRuntime/7.45.0\"","timestamp":"2025-09-07T05:06:26.627Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-07T05:36:12.968Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-07T05:36:54.597Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-07T05:37:18.290Z"}
+{"level":"info","message":"Received input from IVR for session 67890: 3","timestamp":"2025-09-07T05:37:56.303Z"}
+{"level":"info","message":"Fetching mini statement from BAP for session: 67890","timestamp":"2025-09-07T05:37:56.304Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:05:37:56 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 159 \"-\" \"PostmanRuntime/7.45.0\"","timestamp":"2025-09-07T05:37:56.312Z"}
+{"level":"info","message":"Received input from IVR for session 123: 3","timestamp":"2025-09-07T05:38:13.892Z"}
+{"level":"info","message":"Fetching mini statement from BAP for session: 123","timestamp":"2025-09-07T05:38:13.892Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:05:38:13 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 157 \"-\" \"PostmanRuntime/7.45.0\"","timestamp":"2025-09-07T05:38:13.894Z"}
+{"level":"info","message":"Received input from IVR for session 123: 4","timestamp":"2025-09-07T05:38:37.469Z"}
+{"level":"info","message":"Simulating lost card report for session: 123","timestamp":"2025-09-07T05:38:37.470Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:05:38:37 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 146 \"-\" \"PostmanRuntime/7.45.0\"","timestamp":"2025-09-07T05:38:37.472Z"}
+{"level":"info","message":"Received input from IVR for session 1234: 4","timestamp":"2025-09-07T05:38:52.638Z"}
+{"level":"info","message":"Simulating lost card report for session: 1234","timestamp":"2025-09-07T05:38:52.638Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:05:38:52 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 147 \"-\" \"PostmanRuntime/7.45.0\"","timestamp":"2025-09-07T05:38:52.640Z"}
+{"level":"info","message":"Received input from IVR for session 1234: 1","timestamp":"2025-09-07T05:39:48.922Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"1234","timestamp":"2025-09-07T05:39:48.990Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:05:39:48 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 66 \"-\" \"axios/1.11.0\"","timestamp":"2025-09-07T05:39:48.992Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:05:39:49 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 66 \"-\" \"PostmanRuntime/7.45.0\"","timestamp":"2025-09-07T05:39:49.000Z"}
+{"level":"info","message":"Received input from IVR for session 5678: 2","timestamp":"2025-09-07T05:40:25.853Z"}
+{"level":"info","message":"Simulating ACS agent transfer for session: 5678","timestamp":"2025-09-07T05:40:25.854Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:05:40:25 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 83 \"-\" \"PostmanRuntime/7.45.0\"","timestamp":"2025-09-07T05:40:25.855Z"}
+{"level":"info","message":"Received input from IVR for session 91011: 3","timestamp":"2025-09-07T05:41:09.062Z"}
+{"level":"info","message":"Fetching mini statement from BAP for session: 91011","timestamp":"2025-09-07T05:41:09.062Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:05:41:09 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 159 \"-\" \"PostmanRuntime/7.45.0\"","timestamp":"2025-09-07T05:41:09.064Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 4","timestamp":"2025-09-07T05:41:48.278Z"}
+{"level":"info","message":"Simulating lost card report for session: 1213","timestamp":"2025-09-07T05:41:48.278Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:05:41:48 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 147 \"-\" \"PostmanRuntime/7.45.0\"","timestamp":"2025-09-07T05:41:48.280Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-07T05:46:18.455Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-07T07:08:34.240Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-07T07:08:55.214Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-07T07:09:14.271Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 7","timestamp":"2025-09-07T07:10:10.542Z"}
+{"level":"info","message":"Simulating contact detail update for session: 1213","timestamp":"2025-09-07T07:10:10.543Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:07:10:10 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 177 \"-\" \"PostmanRuntime/7.45.0\"","timestamp":"2025-09-07T07:10:10.549Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 8","timestamp":"2025-09-07T07:10:28.075Z"}
+{"level":"info","message":"Fetching loan details from BAP for session: 1213","timestamp":"2025-09-07T07:10:28.076Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:07:10:28 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 153 \"-\" \"PostmanRuntime/7.45.0\"","timestamp":"2025-09-07T07:10:28.078Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 9","timestamp":"2025-09-07T07:10:37.013Z"}
+{"level":"info","message":"Simulating suspicious transaction report for session: 1213","timestamp":"2025-09-07T07:10:37.014Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:07:10:37 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 195 \"-\" \"PostmanRuntime/7.45.0\"","timestamp":"2025-09-07T07:10:37.015Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 10","timestamp":"2025-09-07T07:10:46.002Z"}
+{"level":"info","message":"Processing e-statement request from BAP for session: 1213","timestamp":"2025-09-07T07:10:46.003Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:07:10:46 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 149 \"-\" \"PostmanRuntime/7.45.0\"","timestamp":"2025-09-07T07:10:46.005Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 5","timestamp":"2025-09-07T07:10:53.863Z"}
+{"level":"info","message":"Simulating new card activation for session: 1213","timestamp":"2025-09-07T07:10:53.864Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:07:10:53 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 128 \"-\" \"PostmanRuntime/7.45.0\"","timestamp":"2025-09-07T07:10:53.865Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 6","timestamp":"2025-09-07T07:11:01.989Z"}
+{"level":"info","message":"Processing utility bill payment from BAP for session: 1213","timestamp":"2025-09-07T07:11:01.990Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:07:11:01 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 110 \"-\" \"PostmanRuntime/7.45.0\"","timestamp":"2025-09-07T07:11:01.991Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 8","timestamp":"2025-09-07T07:11:51.263Z"}
+{"level":"info","message":"Fetching loan details from BAP for session: 1213","timestamp":"2025-09-07T07:11:51.264Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:07:11:51 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 153 \"-\" \"PostmanRuntime/7.45.0\"","timestamp":"2025-09-07T07:11:51.266Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 10","timestamp":"2025-09-07T07:12:55.304Z"}
+{"level":"info","message":"Processing e-statement request from BAP for session: 1213","timestamp":"2025-09-07T07:12:55.305Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:07:12:55 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 149 \"-\" \"PostmanRuntime/7.45.0\"","timestamp":"2025-09-07T07:12:55.306Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 5","timestamp":"2025-09-07T07:14:04.310Z"}
+{"level":"info","message":"Simulating new card activation for session: 1213","timestamp":"2025-09-07T07:14:04.310Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:07:14:04 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 128 \"-\" \"PostmanRuntime/7.45.0\"","timestamp":"2025-09-07T07:14:04.311Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 1","timestamp":"2025-09-07T07:14:31.549Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"1213","timestamp":"2025-09-07T07:14:31.592Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:07:14:31 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 66 \"-\" \"axios/1.11.0\"","timestamp":"2025-09-07T07:14:31.593Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:07:14:31 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 66 \"-\" \"PostmanRuntime/7.45.0\"","timestamp":"2025-09-07T07:14:31.599Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 2","timestamp":"2025-09-07T07:14:39.574Z"}
+{"level":"info","message":"Simulating ACS agent transfer for session: 1213","timestamp":"2025-09-07T07:14:39.574Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:07:14:39 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 83 \"-\" \"PostmanRuntime/7.45.0\"","timestamp":"2025-09-07T07:14:39.576Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 3","timestamp":"2025-09-07T07:14:48.447Z"}
+{"level":"info","message":"Fetching mini statement from BAP for session: 1213","timestamp":"2025-09-07T07:14:48.447Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:07:14:48 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 158 \"-\" \"PostmanRuntime/7.45.0\"","timestamp":"2025-09-07T07:14:48.449Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 4","timestamp":"2025-09-07T07:14:57.482Z"}
+{"level":"info","message":"Simulating lost card report for session: 1213","timestamp":"2025-09-07T07:14:57.483Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:07:14:57 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 147 \"-\" \"PostmanRuntime/7.45.0\"","timestamp":"2025-09-07T07:14:57.484Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 5","timestamp":"2025-09-07T07:15:10.065Z"}
+{"level":"info","message":"Simulating new card activation for session: 1213","timestamp":"2025-09-07T07:15:10.065Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:07:15:10 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 128 \"-\" \"PostmanRuntime/7.45.0\"","timestamp":"2025-09-07T07:15:10.067Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 4","timestamp":"2025-09-07T07:15:17.321Z"}
+{"level":"info","message":"Simulating lost card report for session: 1213","timestamp":"2025-09-07T07:15:17.321Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:07:15:17 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 147 \"-\" \"PostmanRuntime/7.45.0\"","timestamp":"2025-09-07T07:15:17.323Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 3","timestamp":"2025-09-07T07:15:28.508Z"}
+{"level":"info","message":"Fetching mini statement from BAP for session: 1213","timestamp":"2025-09-07T07:15:28.508Z"}
+{"level":"info","message":"::1 - - [07/Sep/2025:07:15:28 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 158 \"-\" \"PostmanRuntime/7.45.0\"","timestamp":"2025-09-07T07:15:28.509Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-07T07:50:06.989Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-07T07:52:51.817Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-07T07:54:23.157Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-07T07:54:39.964Z"}
