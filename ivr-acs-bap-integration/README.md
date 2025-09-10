@@ -14,7 +14,7 @@
 
 ## Introduction
 
-This project modernizes a legacy VXML-based IVR (Interactive Voice Response) system by integrating it with advanced conversational AI platforms like Azure Communication Services (ACS) and Business Automation Platform (BAP). The solution uses a Node.js middleware for routing, processing, and orchestrating IVR requests between legacy and modern services.
+This project modernizes a legacy VXML-based IVR (Interactive Voice Response) system by integrating it with advanced conversational AI platforms like Azure Communication Services (ACS) and Business Automation Platform (BAP).
 
 **Milestone 2** focuses on developing and implementing a robust Node.js middleware. This integration layer routes IVR requests, simulates ACS/BAP integrations, and is structured for future expansion.
 
@@ -41,9 +41,9 @@ The project is organized for clarity and modularity:
 ```
 ivr-acs-bap-integration/
 ├── assets/
-│   ├── 1.png                # Cover image for README
-│   ├── 2.png                # Additional images/screenshots
-│   └── 3.png                # Additional images/screenshots
+│   ├── 1.png                # Success case image (Valid input)
+│   ├── 2.png                # (Deprecated, see below)
+│   └── 3.png                # Error case image (Client-side failure)
 ├── docs/
 │   ├── API.md               # API documentation
 │   └── architecture.png     # System architecture diagram
@@ -128,9 +128,12 @@ ivr-acs-bap-integration/
 Endpoints were tested successfully using Thunder Client.
 
 - **Success Case:** Valid input (`inputValue: "1"`)  
-  ![Success Case](./assets/2.png)
-- **Error Case:** Server-side failure  
-  ![Error Case](./assets/3.png)
+  When the user enters a valid input, the middleware navigates to the success page.  
+  ![Success Case](./assets/one.png)
+
+- **Error Case:** Client-side failure  
+  In case of a client-side error, the middleware navigates to the error page.  
+  ![Error Case](./assets/three.png)
 
 ---
 
@@ -165,7 +168,7 @@ Endpoints were tested successfully using Thunder Client.
 
 ## Conclusion
 
-Milestone 2 is complete. The Node.js middleware is fully functional, orchestrating workflows using mocked BAP and ACS services. It robustly handles user inputs and is structured for future integration with live ACS and BAP platforms.
+Milestone 2 is complete. The Node.js middleware is fully functional, orchestrating workflows using mocked BAP and ACS services. It robustly handles user inputs and is structured for future integration.
 
 **Next Steps:**  
 Transition from mocked services to live ACS and BAP platforms, involving API credentials, SDKs, and real call data.
