@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="https://storage.googleapis.com/gemini-prod-us-west1-assets/images/688849b3922d365f17127e2a48a0f968" alt="Project Banner">
+  <img src="./assets/IVRcoverpage.png" alt="Project Cover Image">
 </p>
 
 <h1 align="center">IVR Modernization Middleware - Milestone 2</h1>
 
 <p align="center">
-  <strong>Team:</strong> Conversational AI Integrators<br>
+  <strong>Team:</strong> NextGen Voice Solutions<br>
   <strong>Member:</strong> Aravind (Project Lead / Full-Stack Developer)<br>
   <strong>Date:</strong> September 10, 2025
 </p>
@@ -14,119 +14,160 @@
 
 ## Introduction
 
-The goal of this project is to modernize a legacy VXML-based IVR (Interactive Voice Response) system by integrating it with modern conversational AI platforms like Azure Communication Services (ACS) and a Bot Application Platform (BAP).
+This project modernizes a legacy VXML-based IVR (Interactive Voice Response) system by integrating it with advanced conversational AI platforms like Azure Communication Services (ACS) and Business Automation Platform (BAP). The solution uses a Node.js middleware for routing, processing, and orchestrating IVR requests between legacy and modern services.
 
-This document covers **Milestone 2**, which focuses on the development and successful implementation of a Node.js middleware. This middleware serves as the central integration layer, capable of routing requests to mocked ACS and BAP services and handling their responses.
+**Milestone 2** focuses on developing and implementing a robust Node.js middleware. This integration layer routes IVR requests, simulates ACS/BAP integrations, and is structured for future expansion.
 
 ---
 
 ## System Architecture
 
-The architecture is designed around the middleware, which acts as a central hub, decoupling the legacy IVR from the modern backend services.
+The middleware acts as the central hub, decoupling the legacy IVR from backend services.
 
 ![System Architecture Diagram](./docs/architecture.png)
 
-The flow is as follows: The **Legacy IVR** captures a user's keypress and sends it to the **Middleware**. The Middleware's controller analyzes the input and routes the request to the appropriate mock service (**ACS** for transfers or **BAP** for self-service). The mock service returns a predefined response, which the middleware formats and sends back to the IVR to be played to the user.
-
----
-
-## Setup and Installation
-
-### **Prerequisites**
-
-- [Node.js](https://nodejs.org/) (v16 or higher)
-- [npm](https://www.npmjs.com/)
-- A REST client like [Thunder Client](https://www.thunderclient.com/) (for VS Code) or Postman.
-
-### **Commands**
-
-1.  **Install Dependencies:**
-    ```bash
-    npm install
-    ```
-2.  **Run the Server:**
-    ```bash
-    npm start
-    ```
-    This will start the server using `nodemon` for automatic reloading on file changes, which is configured in the `package.json` file.
+**Flow Overview:**
+- **Legacy IVR** captures user keypress and sends it to **Middleware**
+- **Middleware** controller analyzes input, routes to corresponding mock ACS or BAP service
+- **Mock Services** simulate responses to user queries
+- **Middleware** returns formatted response to IVR
 
 ---
 
 ## Folder Structure
 
-The project is organized into a modular structure to ensure a clear separation of concerns.
+The project is organized for clarity and modularity:
 
-- **`server.js`**: The main entry point that starts the Express server.
-- **`/src/api/routes`**: Defines the API endpoints and maps them to controller functions.
-- **`/src/api/controllers`**: Contains the core business logic for handling requests and orchestrating responses.
-- **`/src/api/services`**: Contains the mocked logic for ACS and BAP services, simulating their behavior.
-- **`/docs`**: Stores project documentation and diagrams, including `architecture.png`.
+```
+ivr-acs-bap-integration/
+├── assets/
+│   ├── 1.png                # Cover image for README
+│   ├── 2.png                # Additional images/screenshots
+│   └── 3.png                # Additional images/screenshots
+├── docs/
+│   ├── API.md               # API documentation
+│   └── architecture.png     # System architecture diagram
+├── node_modules/
+├── src/
+│   ├── api/
+│   │   ├── controllers/
+│   │   │   └── ivr.controller.js      # Core logic for handling IVR requests
+│   │   ├── routes/
+│   │   │   └── ivr.routes.js          # Defines the API endpoints
+│   │   └── services/
+│   │       ├── acs.service.js         # Simulates interaction with ACS
+│   │       └── bap.service.js         # Simulates interaction with BAP bot
+│   ├── config/
+│   │   └── index.js                   # For managing environment variables
+│   └── utils/
+│       └── logger.js                  # For logging requests and errors
+├── .env                               # Environment variables (e.g., port, API URLs)
+├── .gitignore                         # Files to be ignored by Git
+├── package.json
+├── README.md                          # Project documentation (this file)
+└── server.js                          # Express server entry point
+```
+
+---
+
+## Setup and Installation
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v16 or higher)
+- [npm](https://www.npmjs.com/)
+- REST client: [Thunder Client](https://www.thunderclient.com/) or Postman
+
+### Installation Steps
+
+1. **Install Dependencies**
+    ```bash
+    npm install
+    ```
+2. **Run the Server**
+    ```bash
+    npm start
+    ```
+    - Uses `nodemon` for automatic reloading (configured in `package.json`).
 
 ---
 
 ## API Endpoints
 
-The middleware uses a single endpoint to receive IVR requests and internal mock endpoints.
+### Main Endpoint
 
-### **Main Endpoint**
+- `POST /api/ivr/handle-input`  
+  Receives a user's digit input from the IVR. Routes the request internally to mock ACS or BAP service.
 
-- `POST /api/ivr/handle-input`: This is the primary endpoint that receives the user's digit from the legacy IVR. It forwards the request internally to either the mock ACS or BAP service based on the input.
+### Mock Endpoints
 
-### **Mock Endpoints**
+- `POST /api/mock-bap-bot`  
+  Dummy endpoint simulating BAP bot response for self-service queries.
 
-- `POST /api/mock-bap-bot`: This is a dummy bot endpoint that simulates the BAP's response for self-service queries.
+---
 
-### **Sample Request/Response**
+## Sample Request/Response
 
 **Request (from IVR to Middleware)**
-
 ```json
 {
-    "sessionId": "session-xyz-12345",
-    "inputType": "DTMF",
-    "inputValue": "1"
+  "sessionId": "session-xyz-12345",
+  "inputType": "DTMF",
+  "inputValue": "1"
 }
-Response (from Middleware to IVR)
-
-JSON
-
-{
-    "sessionId": "session-xyz-12345",
-    "responseText": "Your account balance is $500."
-}
-Testing
-The endpoints were successfully tested using Thunder Client to simulate the IVR.
-
-Success Case: Valid Input (inputValue: "1")
-Provide screenshot link here if needed, e.g., ![Success Case](./docs/success-test.png)
-
-Error Case: Server-Side Failure
-Provide screenshot link here if needed, e.g., ![Error Case](./docs/error-test.png)
-
-Task Division
-As the sole developer on this milestone, I was responsible for the end-to-end development of all modules:
-
-Server & Routing: Setup of the Express server and API routes.
-
-Controller Logic: Implementation of the core request handling and routing logic.
-
-Service Mocking: Creation of the simulated BAP and ACS services.
-
-Documentation: Authored the README.md and api.md files.
-
-Challenges & Learnings
-Challenges
-Structuring the Express application in a scalable, modular way.
-
-Effectively simulating asynchronous service calls using async/await to mimic real-world API interactions with Axios.
-
-Learnings
-The Power of Middleware: Gained a deep understanding of how middleware can act as a powerful bridge between legacy and modern systems, enabling phased modernization without a complete overhaul.
-
-Modular Architecture: Learned the importance of separating concerns (routes, controllers, services) to create code that is clean, maintainable, and easy to test.
-
-Conclusion
-Milestone 2 is complete. The Node.js middleware is fully functional and successfully orchestrates workflows using mocked BAP and ACS services. It correctly handles various user inputs and includes robust error handling.
-
-The next step in the project is to transition from the mocked services to integrating with the live ACS and BAP platforms, which will involve handling real API credentials, SDKs, and live call data.
 ```
+
+**Response (from Middleware to IVR)**
+```json
+{
+  "sessionId": "session-xyz-12345",
+  "responseText": "Your account balance is $500."
+}
+```
+
+Endpoints were tested successfully using Thunder Client.
+
+- **Success Case:** Valid input (`inputValue: "1"`)  
+  ![Success Case](./assets/2.png)
+- **Error Case:** Server-side failure  
+  ![Error Case](./assets/3.png)
+
+---
+
+## Documentation
+
+- **API Reference:** See [`docs/API.md`](./docs/API.md) for complete endpoint details.
+- **Architecture:** See [`docs/architecture.png`](./docs/architecture.png) for the system diagram.
+
+---
+
+## Task Division
+
+**As the sole developer for this milestone:**
+- **Server & Routing:** Set up Express server and API routes.
+- **Controller Logic:** Implemented core request handling and routing.
+- **Service Mocking:** Created simulated BAP and ACS services.
+- **Documentation:** Authored README.md and API documentation.
+
+---
+
+## Challenges & Learnings
+
+### Challenges
+- Structuring Express application for scalability and modularity.
+- Simulating asynchronous service calls using async/await to mimic real-world API interactions.
+
+### Learnings
+- **Middleware Power:** Middleware can bridge legacy and modern systems, enabling phased modernization.
+- **Modular Architecture:** Separation of concerns (routes, controllers, services) leads to clean, maintainable code.
+
+---
+
+## Conclusion
+
+Milestone 2 is complete. The Node.js middleware is fully functional, orchestrating workflows using mocked BAP and ACS services. It robustly handles user inputs and is structured for future integration with live ACS and BAP platforms.
+
+**Next Steps:**  
+Transition from mocked services to live ACS and BAP platforms, involving API credentials, SDKs, and real call data.
+
+---
