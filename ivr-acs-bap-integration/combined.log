@@ -95,3 +95,31 @@
 {"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-07T07:52:51.817Z"}
 {"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-07T07:54:23.157Z"}
 {"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-07T07:54:39.964Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-09T15:36:27.783Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 12","timestamp":"2025-09-09T15:36:46.595Z"}
+{"level":"info","message":"::1 - - [09/Sep/2025:15:36:46 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 71 \"-\" \"PostmanRuntime/7.45.0\"","timestamp":"2025-09-09T15:36:46.601Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 1","timestamp":"2025-09-09T17:23:49.193Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"1213","timestamp":"2025-09-09T17:23:49.272Z"}
+{"level":"info","message":"::1 - - [09/Sep/2025:17:23:49 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 66 \"-\" \"axios/1.11.0\"","timestamp":"2025-09-09T17:23:49.274Z"}
+{"level":"info","message":"::1 - - [09/Sep/2025:17:23:49 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 66 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-09T17:23:49.283Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 1","timestamp":"2025-09-09T17:24:21.017Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"1213","timestamp":"2025-09-09T17:24:21.025Z"}
+{"level":"info","message":"::1 - - [09/Sep/2025:17:24:21 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 66 \"-\" \"axios/1.11.0\"","timestamp":"2025-09-09T17:24:21.027Z"}
+{"level":"info","message":"::1 - - [09/Sep/2025:17:24:21 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 66 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-09T17:24:21.031Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-09T17:24:41.991Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 1","timestamp":"2025-09-09T17:24:51.246Z"}
+{"level":"error","message":"Error calling BAP service:","timestamp":"2025-09-09T17:24:51.254Z"}
+{"level":"error","message":"Error processing IVR request: Failed to get response from BAP","stack":"Error: Failed to get response from BAP\n    at Object.getBalance (C:\\Users\\aravi\\OneDrive\\Desktop\\Modern-IVR\\Conversational-IVR-Aravind\\ivr-acs-bap-integration\\src\\api\\services\\bap.service.js:14:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async exports.handleInput (C:\\Users\\aravi\\OneDrive\\Desktop\\Modern-IVR\\Conversational-IVR-Aravind\\ivr-acs-bap-integration\\src\\api\\controllers\\ivr.controller.js:21:20)","timestamp":"2025-09-09T17:24:51.255Z"}
+{"level":"info","message":"::1 - - [09/Sep/2025:17:24:51 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 500 87 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-09T17:24:51.262Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 1","timestamp":"2025-09-09T17:26:26.837Z"}
+{"level":"error","message":"Error calling BAP service:","timestamp":"2025-09-09T17:26:26.840Z"}
+{"level":"error","message":"Error processing IVR request: Failed to get response from BAP","stack":"Error: Failed to get response from BAP\n    at Object.getBalance (C:\\Users\\aravi\\OneDrive\\Desktop\\Modern-IVR\\Conversational-IVR-Aravind\\ivr-acs-bap-integration\\src\\api\\services\\bap.service.js:14:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async exports.handleInput (C:\\Users\\aravi\\OneDrive\\Desktop\\Modern-IVR\\Conversational-IVR-Aravind\\ivr-acs-bap-integration\\src\\api\\controllers\\ivr.controller.js:21:20)","timestamp":"2025-09-09T17:26:26.840Z"}
+{"level":"info","message":"::1 - - [09/Sep/2025:17:26:26 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 500 87 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-09T17:26:26.842Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-09T17:26:41.502Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 1","timestamp":"2025-09-09T17:26:47.185Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"1213","timestamp":"2025-09-09T17:26:47.237Z"}
+{"level":"info","message":"::1 - - [09/Sep/2025:17:26:47 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 66 \"-\" \"axios/1.11.0\"","timestamp":"2025-09-09T17:26:47.242Z"}
+{"level":"info","message":"::1 - - [09/Sep/2025:17:26:47 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 66 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-09T17:26:47.251Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-09T17:58:15.046Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-09T18:15:58.709Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-09T18:52:22.102Z"}
