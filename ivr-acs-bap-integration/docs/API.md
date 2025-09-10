@@ -8,11 +8,11 @@ This document provides the complete technical reference for the IVR Integration 
 
 ### Bot Application Platform (BAP)
 
-The BAP is the **automated brain** 🤖 of the system. It acts as an intelligent, automated assistant responsible for understanding user requests, processing information, and providing answers for all self-service tasks without needing a human.
+The BAP is the **automated brain** 🤖 of the system. It acts as an intelligent, automated assistant responsible for understanding user requests, processing information, and providing answers for all self-service workflows.
 
 ### Azure Communication Services (ACS)
 
-ACS is the **modern telephone operator** 📞. Its primary job is to manage the live phone call itself and handle actions that require leaving the automated system, especially transferring the call to a live agent.
+ACS is the **modern telephone operator** 📞. Its primary job is to manage the live phone call itself and handle actions that require leaving the automated system, especially transferring the call to a human agent.
 
 ---
 
@@ -37,7 +37,7 @@ The API expects a JSON payload with the following structure.
 | `inputValue`       | String |   Yes    | The number the user pressed on their keypad (e.g., `"1"`, `"10"`).         |
 | `callConnectionId` | String |    No    | The unique ID of the live ACS call. **Required only for agent transfers.** |
 
-### **Example Request**
+### Example Request
 
 ```json
 {
@@ -46,37 +46,50 @@ The API expects a JSON payload with the following structure.
     "inputValue": "1",
     "callConnectionId": "a1b2c3d4-..."
 }
-3. Response Specification
+```
+
+---
+
+## 3. Response Specification
+
 The API provides standardized JSON responses for both success and failure scenarios.
 
-Success Response
+### Success Response
+
 Upon successfully processing the request, the API returns a 200 OK status code. The response body contains the text that the legacy IVR system should play back to the user.
 
-Status Code: 200 OK
+- **Status Code:** 200 OK
+- **Content-Type:** application/json
 
-Content-Type: application/json
+#### Example Success Body
 
-Example Success Body
-JSON
-
+```json
 {
     "sessionId": "12345",
     "responseText": "Your account balance is $500"
 }
-Error Response
+```
+
+### Error Response
+
 If a server-side failure occurs, the API returns a 500 Internal Server Error status code with a safe, user-friendly message.
 
-Status Code: 500 Internal Server Error
+- **Status Code:** 500 Internal Server Error
 
-Example Error Body
-JSON
+#### Example Error Body
 
+```json
 {
     "sessionId": "session-xyz-12345",
     "responseText": "Sorry, an error occurred. Please try again later."
 }
-4. Supported inputValue Options
-The inputValue field determines which workflow is triggered.
+```
+
+---
+
+## 4. Supported inputValue Options
+
+The `inputValue` field determines which workflow is triggered.
 
 | inputValue | Service | Description                                                        |
 |:----------:|:-------:|--------------------------------------------------------------------|
@@ -89,18 +102,24 @@ The inputValue field determines which workflow is triggered.
 |     "7"    |  ACS    | Initiates a workflow to update the user's contact details.         |
 |     "8"    |  BAP    | Retrieves details about the user's loan and next EMI payment.      |
 |     "9"    |  ACS    | Reports a suspicious transaction for a fraud review.               |
-|    "10"    |  BAP    | Requests an e-statement to be sent to the  user's registered email.
+|    "10"    |  BAP    | Requests an e-statement to be sent to the user's registered email. |
 
-5. Usage Examples
+---
+
+## 5. Usage Examples
+
 Here are screenshots demonstrating how to test various scenarios using Postman.
 
-Scenario 1: Balance Inquiry (inputValue: "1")
+### Scenario 1: Balance Inquiry (`inputValue: "1"`)
 
+![Balance Inquiry Screenshot](../assets/one.png)
 
-Scenario 2: Agent Transfer (inputValue: "2")
+### Scenario 2: Agent Transfer (`inputValue: "2"`)
 
+![Agent Transfer Screenshot](../assets/two.png)
 
-Scenario 3: Error Handling Test
+### Scenario 3: Error Handling Test
 
+![Error Handling Screenshot](../assets/three.png)
 
-```
+---
