@@ -181,7 +181,7 @@ Transition from mocked services to live ACS and BAP platforms, involving API cre
 
 ---
 
-## Conversational AI Integration
+### Conversational AI Integration
 
 This milestone successfully enhances the IVR integration layer by adding support for natural language (speech) inputs, making the system dual-channel.
 
@@ -233,9 +233,10 @@ A new file, `nlu.service.js`, was created to act as the "brain" for understandin
 4.  **Service Routing**: The controller's `switch` statement matches the `CheckBalance` intent and calls the `getBalanceFromSpeech()` function in `bap.service.js`.
 5.  **Response Generation**: The BAP service returns a JSON object with the appropriate response, e.g., `{ "response": "Your account balance is ₹500." }`.
 6.  **Text to Speech**: The middleware sends this response back. The external system would then use a text-to-speech engine to play this message to the user.
-    ![conversational work flow](../assets/Conversational flow.png)
 
----
+### Conversational work flow diagram
+
+![conversational work flow](./assets/Conversational_flow.png)
 
 ## 5. Testing
 
