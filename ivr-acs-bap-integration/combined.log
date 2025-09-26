@@ -123,3 +123,220 @@
 {"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-09T17:58:15.046Z"}
 {"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-09T18:15:58.709Z"}
 {"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-09T18:52:22.102Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-12T13:25:48.379Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 1","timestamp":"2025-09-12T13:27:51.249Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"1213","timestamp":"2025-09-12T13:27:51.300Z"}
+{"level":"info","message":"::1 - - [12/Sep/2025:13:27:51 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 66 \"-\" \"axios/1.11.0\"","timestamp":"2025-09-12T13:27:51.306Z"}
+{"level":"info","message":"::1 - - [12/Sep/2025:13:27:51 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 66 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-12T13:27:51.314Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 2","timestamp":"2025-09-12T13:28:01.683Z"}
+{"level":"info","message":"Simulating ACS agent transfer for session: 1213","timestamp":"2025-09-12T13:28:01.683Z"}
+{"level":"info","message":"::1 - - [12/Sep/2025:13:28:01 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 83 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-12T13:28:01.686Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 14","timestamp":"2025-09-12T13:28:09.401Z"}
+{"level":"info","message":"::1 - - [12/Sep/2025:13:28:09 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 71 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-12T13:28:09.403Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 1","timestamp":"2025-09-12T13:28:17.358Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"1213","timestamp":"2025-09-12T13:28:17.364Z"}
+{"level":"info","message":"::1 - - [12/Sep/2025:13:28:17 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 66 \"-\" \"axios/1.11.0\"","timestamp":"2025-09-12T13:28:17.365Z"}
+{"level":"info","message":"::1 - - [12/Sep/2025:13:28:17 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 66 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-12T13:28:17.368Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-12T13:49:21.325Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-12T14:19:11.680Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 1","timestamp":"2025-09-12T14:27:56.331Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"1213","timestamp":"2025-09-12T14:27:56.386Z"}
+{"level":"info","message":"::1 - - [12/Sep/2025:14:27:56 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 66 \"-\" \"axios/1.11.0\"","timestamp":"2025-09-12T14:27:56.391Z"}
+{"level":"info","message":"::1 - - [12/Sep/2025:14:27:56 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 66 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-12T14:27:56.399Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 5","timestamp":"2025-09-12T14:28:05.012Z"}
+{"level":"info","message":"Simulating new card activation for session: 1213","timestamp":"2025-09-12T14:28:05.013Z"}
+{"level":"info","message":"::1 - - [12/Sep/2025:14:28:05 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 128 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-12T14:28:05.014Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 2","timestamp":"2025-09-12T14:28:18.591Z"}
+{"level":"info","message":"Simulating ACS agent transfer for session: 1213","timestamp":"2025-09-12T14:28:18.593Z"}
+{"level":"info","message":"::1 - - [12/Sep/2025:14:28:18 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 83 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-12T14:28:18.594Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-12T14:36:13.676Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-21T07:48:09.089Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-21T07:49:59.690Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-21T07:50:27.567Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-21T07:51:11.485Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-21T07:51:46.510Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:07:57:41 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 404 160 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T07:57:41.938Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-21T08:05:24.413Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:05:38 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 500 1836 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:05:38.514Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-21T08:09:05.452Z"}
+{"level":"info","message":"Performing intent recognition for query: \"what is my account balance\"","timestamp":"2025-09-21T08:09:14.843Z"}
+{"level":"info","message":"Recognized intent: CheckBalance for session: 101","timestamp":"2025-09-21T08:09:14.844Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for balance for session: 101","timestamp":"2025-09-21T08:09:14.845Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"101","timestamp":"2025-09-21T08:09:14.914Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:09:14 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 65 \"-\" \"axios/1.11.0\"","timestamp":"2025-09-21T08:09:14.919Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:09:14 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 61 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:09:14.928Z"}
+{"level":"info","message":"Performing intent recognition for query: \"i wants to check my account balance\"","timestamp":"2025-09-21T08:09:52.415Z"}
+{"level":"info","message":"Recognized intent: CheckBalance for session: 101","timestamp":"2025-09-21T08:09:52.416Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for balance for session: 101","timestamp":"2025-09-21T08:09:52.416Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"101","timestamp":"2025-09-21T08:09:52.423Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:09:52 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 65 \"-\" \"axios/1.11.0\"","timestamp":"2025-09-21T08:09:52.427Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:09:52 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 61 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:09:52.434Z"}
+{"level":"info","message":"Performing intent recognition for query: \"can you please tell me my bank balance\"","timestamp":"2025-09-21T08:10:19.795Z"}
+{"level":"info","message":"Recognized intent: CheckBalance for session: 101","timestamp":"2025-09-21T08:10:19.795Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for balance for session: 101","timestamp":"2025-09-21T08:10:19.796Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"101","timestamp":"2025-09-21T08:10:19.801Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:10:19 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 65 \"-\" \"axios/1.11.0\"","timestamp":"2025-09-21T08:10:19.803Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:10:19 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 61 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:10:19.812Z"}
+{"level":"info","message":"Performing intent recognition for query: \"i need to speak with a human representative\"","timestamp":"2025-09-21T08:11:28.931Z"}
+{"level":"info","message":"Recognized intent: TalkToAgent for session: 101","timestamp":"2025-09-21T08:11:28.931Z"}
+{"level":"info","message":"ACS: Fulfilling speech request for agent transfer for session: 101","timestamp":"2025-09-21T08:11:28.932Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:11:28 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 77 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:11:28.933Z"}
+{"level":"info","message":"Performing intent recognition for query: \"i need to speak with an agent\"","timestamp":"2025-09-21T08:11:41.968Z"}
+{"level":"info","message":"Recognized intent: TalkToAgent for session: 101","timestamp":"2025-09-21T08:11:41.969Z"}
+{"level":"info","message":"ACS: Fulfilling speech request for agent transfer for session: 101","timestamp":"2025-09-21T08:11:41.969Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:11:41 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 77 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:11:41.970Z"}
+{"level":"info","message":"Performing intent recognition for query: \"i wants to know my recent transcations\"","timestamp":"2025-09-21T08:12:17.390Z"}
+{"level":"info","message":"Recognized intent: Unknown for session: 101","timestamp":"2025-09-21T08:12:17.391Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:12:17 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 90 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:12:17.392Z"}
+{"level":"info","message":"Performing intent recognition for query: \"show me my recent transactions.\"","timestamp":"2025-09-21T08:14:01.995Z"}
+{"level":"info","message":"Recognized intent: GetMiniStatement for session: 101","timestamp":"2025-09-21T08:14:01.996Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for mini statement for session: 101","timestamp":"2025-09-21T08:14:01.996Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:14:01 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 153 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:14:01.998Z"}
+{"level":"info","message":"Performing intent recognition for query: \"i want to know my recent transactions.\"","timestamp":"2025-09-21T08:14:50.927Z"}
+{"level":"info","message":"Recognized intent: GetMiniStatement for session: 101","timestamp":"2025-09-21T08:14:50.927Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for mini statement for session: 101","timestamp":"2025-09-21T08:14:50.927Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:14:50 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 153 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:14:50.929Z"}
+{"level":"info","message":"Performing intent recognition for query: \"i want to know my recent transactions.\"","timestamp":"2025-09-21T08:14:55.309Z"}
+{"level":"info","message":"Recognized intent: GetMiniStatement for session: 101","timestamp":"2025-09-21T08:14:55.310Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for mini statement for session: 101","timestamp":"2025-09-21T08:14:55.310Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:14:55 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 153 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:14:55.311Z"}
+{"level":"info","message":"Performing intent recognition for query: \"i wants to know my recent transactions.\"","timestamp":"2025-09-21T08:15:03.358Z"}
+{"level":"info","message":"Recognized intent: GetMiniStatement for session: 101","timestamp":"2025-09-21T08:15:03.358Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for mini statement for session: 101","timestamp":"2025-09-21T08:15:03.359Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:15:03 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 153 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:15:03.360Z"}
+{"level":"info","message":"Performing intent recognition for query: \"i lost my card need to block it\"","timestamp":"2025-09-21T08:15:41.516Z"}
+{"level":"info","message":"Recognized intent: ReportLostCard for session: 101","timestamp":"2025-09-21T08:15:41.516Z"}
+{"level":"info","message":"ACS: Fulfilling speech request for lost card for session: 101","timestamp":"2025-09-21T08:15:41.517Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:15:41 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 145 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:15:41.518Z"}
+{"level":"info","message":"Performing intent recognition for query: \"i lost my card \"","timestamp":"2025-09-21T08:15:53.529Z"}
+{"level":"info","message":"Recognized intent: ReportLostCard for session: 101","timestamp":"2025-09-21T08:15:53.529Z"}
+{"level":"info","message":"ACS: Fulfilling speech request for lost card for session: 101","timestamp":"2025-09-21T08:15:53.529Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:15:53 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 145 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:15:53.531Z"}
+{"level":"info","message":"Performing intent recognition for query: \"activate my new credit card \"","timestamp":"2025-09-21T08:16:50.540Z"}
+{"level":"info","message":"Recognized intent: ActivateNewCard for session: 101","timestamp":"2025-09-21T08:16:50.540Z"}
+{"level":"info","message":"ACS: Fulfilling speech request to activate card for session: 101","timestamp":"2025-09-21T08:16:50.541Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:16:50 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 105 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:16:50.542Z"}
+{"level":"info","message":"Performing intent recognition for query: \"can i pay my elecricity bill \"","timestamp":"2025-09-21T08:17:21.350Z"}
+{"level":"info","message":"Recognized intent: PayUtilityBill for session: 101","timestamp":"2025-09-21T08:17:21.350Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for utility bill for session: 101","timestamp":"2025-09-21T08:17:21.351Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:17:21 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 105 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:17:21.352Z"}
+{"level":"info","message":"Performing intent recognition for query: \"i want to pay electricity bill \"","timestamp":"2025-09-21T08:17:41.103Z"}
+{"level":"info","message":"Recognized intent: PayUtilityBill for session: 101","timestamp":"2025-09-21T08:17:41.104Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for utility bill for session: 101","timestamp":"2025-09-21T08:17:41.104Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:17:41 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 105 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:17:41.105Z"}
+{"level":"info","message":"Performing intent recognition for query: \"electricity bill \"","timestamp":"2025-09-21T08:17:57.645Z"}
+{"level":"info","message":"Recognized intent: Unknown for session: 101","timestamp":"2025-09-21T08:17:57.646Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:17:57 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 90 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:17:57.647Z"}
+{"level":"info","message":"Performing intent recognition for query: \"electricity bill? \"","timestamp":"2025-09-21T08:18:19.685Z"}
+{"level":"info","message":"Recognized intent: Unknown for session: 101","timestamp":"2025-09-21T08:18:19.685Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:18:19 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 90 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:18:19.687Z"}
+{"level":"info","message":"Performing intent recognition for query: \"electricity bill?\"","timestamp":"2025-09-21T08:18:34.275Z"}
+{"level":"info","message":"Recognized intent: Unknown for session: 101","timestamp":"2025-09-21T08:18:34.275Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:18:34 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 90 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:18:34.276Z"}
+{"level":"info","message":"Performing intent recognition for query: \"can i pay my electricity bill?\"","timestamp":"2025-09-21T08:18:46.746Z"}
+{"level":"info","message":"Recognized intent: PayUtilityBill for session: 101","timestamp":"2025-09-21T08:18:46.747Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for utility bill for session: 101","timestamp":"2025-09-21T08:18:46.747Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:18:46 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 105 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:18:46.748Z"}
+{"level":"info","message":"Performing intent recognition for query: \"can i pay my electricity bill?\"","timestamp":"2025-09-21T08:18:57.150Z"}
+{"level":"info","message":"Recognized intent: PayUtilityBill for session: 101","timestamp":"2025-09-21T08:18:57.151Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for utility bill for session: 101","timestamp":"2025-09-21T08:18:57.151Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:18:57 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 105 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:18:57.152Z"}
+{"level":"info","message":"Performing intent recognition for query: \" electricity bill\"","timestamp":"2025-09-21T08:19:21.396Z"}
+{"level":"info","message":"Recognized intent: Unknown for session: 101","timestamp":"2025-09-21T08:19:21.397Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:19:21 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 90 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:19:21.398Z"}
+{"level":"info","message":"Performing intent recognition for query: \"pay electricity bill\"","timestamp":"2025-09-21T08:22:01.482Z"}
+{"level":"info","message":"Recognized intent: PayUtilityBill for session: 101","timestamp":"2025-09-21T08:22:01.483Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for utility bill for session: 101","timestamp":"2025-09-21T08:22:01.483Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:22:01 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 105 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:22:01.484Z"}
+{"level":"info","message":"Performing intent recognition for query: \"update my phone number\"","timestamp":"2025-09-21T08:23:00.533Z"}
+{"level":"info","message":"Recognized intent: UpdateContactDetails for session: 101","timestamp":"2025-09-21T08:23:00.533Z"}
+{"level":"info","message":"ACS: Fulfilling speech request to update contact details for session: 101","timestamp":"2025-09-21T08:23:00.534Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:23:00 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 125 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:23:00.535Z"}
+{"level":"info","message":"Performing intent recognition for query: \" phone number\"","timestamp":"2025-09-21T08:23:07.692Z"}
+{"level":"info","message":"Recognized intent: Unknown for session: 101","timestamp":"2025-09-21T08:23:07.692Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:23:07 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 90 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:23:07.694Z"}
+{"level":"info","message":"Performing intent recognition for query: \"i have to update my phone number\"","timestamp":"2025-09-21T08:23:23.674Z"}
+{"level":"info","message":"Recognized intent: UpdateContactDetails for session: 101","timestamp":"2025-09-21T08:23:23.675Z"}
+{"level":"info","message":"ACS: Fulfilling speech request to update contact details for session: 101","timestamp":"2025-09-21T08:23:23.675Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:23:23 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 125 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:23:23.676Z"}
+{"level":"info","message":"Performing intent recognition for query: \"loan emi\"","timestamp":"2025-09-21T08:24:05.562Z"}
+{"level":"info","message":"Recognized intent: GetLoanDetails for session: 101","timestamp":"2025-09-21T08:24:05.563Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for loan details for session: 101","timestamp":"2025-09-21T08:24:05.563Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:24:05 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 148 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:24:05.565Z"}
+{"level":"info","message":"Performing intent recognition for query: \"emi loan\"","timestamp":"2025-09-21T08:24:16.419Z"}
+{"level":"info","message":"Recognized intent: GetLoanDetails for session: 101","timestamp":"2025-09-21T08:24:16.419Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for loan details for session: 101","timestamp":"2025-09-21T08:24:16.420Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:24:16 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 148 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:24:16.421Z"}
+{"level":"info","message":"Performing intent recognition for query: \"what is my loan emi\"","timestamp":"2025-09-21T08:24:30.752Z"}
+{"level":"info","message":"Recognized intent: GetLoanDetails for session: 101","timestamp":"2025-09-21T08:24:30.753Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for loan details for session: 101","timestamp":"2025-09-21T08:24:30.753Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:24:30 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 148 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:24:30.754Z"}
+{"level":"info","message":"Performing intent recognition for query: \"unauthorised\"","timestamp":"2025-09-21T08:25:18.735Z"}
+{"level":"info","message":"Recognized intent: Unknown for session: 101","timestamp":"2025-09-21T08:25:18.735Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:25:18 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 90 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:25:18.737Z"}
+{"level":"info","message":"Performing intent recognition for query: \"unauthorized\"","timestamp":"2025-09-21T08:25:34.057Z"}
+{"level":"info","message":"Recognized intent: ReportSuspiciousTransaction for session: 101","timestamp":"2025-09-21T08:25:34.057Z"}
+{"level":"info","message":"ACS: Fulfilling speech request for suspicious transaction for session: 101","timestamp":"2025-09-21T08:25:34.058Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:25:34 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 177 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:25:34.059Z"}
+{"level":"info","message":"Performing intent recognition for query: \"email me my last statement\"","timestamp":"2025-09-21T08:25:59.706Z"}
+{"level":"info","message":"Recognized intent: GetMiniStatement for session: 101","timestamp":"2025-09-21T08:25:59.706Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for mini statement for session: 101","timestamp":"2025-09-21T08:25:59.706Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:25:59 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 153 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:25:59.707Z"}
+{"level":"info","message":"Performing intent recognition for query: \"can you email me my last statement?\"","timestamp":"2025-09-21T08:26:29.256Z"}
+{"level":"info","message":"Recognized intent: GetMiniStatement for session: 101","timestamp":"2025-09-21T08:26:29.256Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for mini statement for session: 101","timestamp":"2025-09-21T08:26:29.257Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:26:29 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 153 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:26:29.258Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-21T08:30:46.609Z"}
+{"level":"info","message":"Performing intent recognition for query: \"can you email me my last statement?\"","timestamp":"2025-09-21T08:30:59.996Z"}
+{"level":"info","message":"Recognized intent: RequestEStatement for session: 101","timestamp":"2025-09-21T08:30:59.997Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for e-statement for session: 101","timestamp":"2025-09-21T08:30:59.997Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:31:00 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 119 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:31:00.006Z"}
+{"level":"info","message":"Performing intent recognition for query: \"give me my last transactions\"","timestamp":"2025-09-21T08:31:21.595Z"}
+{"level":"info","message":"Recognized intent: GetMiniStatement for session: 101","timestamp":"2025-09-21T08:31:21.596Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for mini statement for session: 101","timestamp":"2025-09-21T08:31:21.597Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:31:21 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 153 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:31:21.599Z"}
+{"level":"info","message":"Performing intent recognition for query: \"give me my past five statements\"","timestamp":"2025-09-21T08:31:36.814Z"}
+{"level":"info","message":"Recognized intent: GetMiniStatement for session: 101","timestamp":"2025-09-21T08:31:36.814Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for mini statement for session: 101","timestamp":"2025-09-21T08:31:36.815Z"}
+{"level":"info","message":"::1 - - [21/Sep/2025:08:31:36 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 153 \"-\" \"PostmanRuntime/7.46.0\"","timestamp":"2025-09-21T08:31:36.817Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-21T08:54:19.963Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-26T05:37:47.224Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 2","timestamp":"2025-09-26T05:38:41.021Z"}
+{"level":"info","message":"Simulating ACS agent transfer for session: 1213","timestamp":"2025-09-26T05:38:41.022Z"}
+{"level":"info","message":"::1 - - [26/Sep/2025:05:38:41 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 83 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-26T05:38:41.028Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 3","timestamp":"2025-09-26T05:38:49.219Z"}
+{"level":"info","message":"Fetching mini statement from BAP for session: 1213","timestamp":"2025-09-26T05:38:49.220Z"}
+{"level":"info","message":"::1 - - [26/Sep/2025:05:38:49 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 158 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-26T05:38:49.222Z"}
+{"level":"info","message":"Received input from IVR for session 1213: 7","timestamp":"2025-09-26T05:38:56.716Z"}
+{"level":"info","message":"Simulating contact detail update for session: 1213","timestamp":"2025-09-26T05:38:56.716Z"}
+{"level":"info","message":"::1 - - [26/Sep/2025:05:38:56 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 177 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-26T05:38:56.718Z"}
+{"level":"info","message":"Performing intent recognition for query: \"what is my account balance\"","timestamp":"2025-09-26T06:10:12.659Z"}
+{"level":"info","message":"Recognized intent: CheckBalance for session: 101","timestamp":"2025-09-26T06:10:12.662Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for balance for session: 101","timestamp":"2025-09-26T06:10:12.663Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"101","timestamp":"2025-09-26T06:10:12.777Z"}
+{"level":"info","message":"::1 - - [26/Sep/2025:06:10:12 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 65 \"-\" \"axios/1.11.0\"","timestamp":"2025-09-26T06:10:12.781Z"}
+{"level":"info","message":"::1 - - [26/Sep/2025:06:10:12 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 61 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-26T06:10:12.791Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-26T06:33:58.488Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-26T07:12:56.446Z"}
+{"level":"info","message":"Performing intent recognition for query: \"i have lost my card\"","timestamp":"2025-09-26T07:13:15.337Z"}
+{"level":"info","message":"Recognized intent: ReportLostCard for session: 101","timestamp":"2025-09-26T07:13:15.338Z"}
+{"level":"info","message":"ACS: Fulfilling speech request for lost card for session: 101","timestamp":"2025-09-26T07:13:15.338Z"}
+{"level":"info","message":"::1 - - [26/Sep/2025:07:13:15 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 145 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-26T07:13:15.344Z"}
+{"level":"info","message":"Performing intent recognition for query: \"what is my bank balance\"","timestamp":"2025-09-26T07:19:18.525Z"}
+{"level":"info","message":"Recognized intent: CheckBalance for session: 101","timestamp":"2025-09-26T07:19:18.526Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for balance for session: 101","timestamp":"2025-09-26T07:19:18.527Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"101","timestamp":"2025-09-26T07:19:18.576Z"}
+{"level":"info","message":"::1 - - [26/Sep/2025:07:19:18 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 65 \"-\" \"axios/1.11.0\"","timestamp":"2025-09-26T07:19:18.580Z"}
+{"level":"info","message":"::1 - - [26/Sep/2025:07:19:18 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 61 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-26T07:19:18.588Z"}
+{"level":"info","message":"Performing intent recognition for query: \"i want to speak with human representative\"","timestamp":"2025-09-26T07:23:42.204Z"}
+{"level":"info","message":"Recognized intent: TalkToAgent for session: 101","timestamp":"2025-09-26T07:23:42.205Z"}
+{"level":"info","message":"ACS: Fulfilling speech request for agent transfer for session: 101","timestamp":"2025-09-26T07:23:42.206Z"}
+{"level":"info","message":"::1 - - [26/Sep/2025:07:23:42 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 77 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-26T07:23:42.208Z"}
+{"level":"info","message":"Performing intent recognition for query: \"i want to update my phone number\"","timestamp":"2025-09-26T07:24:55.053Z"}
+{"level":"info","message":"Recognized intent: UpdateContactDetails for session: 101","timestamp":"2025-09-26T07:24:55.054Z"}
+{"level":"info","message":"ACS: Fulfilling speech request to update contact details for session: 101","timestamp":"2025-09-26T07:24:55.055Z"}
+{"level":"info","message":"::1 - - [26/Sep/2025:07:24:55 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 125 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-26T07:24:55.056Z"}
+{"level":"info","message":"Performing intent recognition for query: \"tell me about my loan emi details\"","timestamp":"2025-09-26T07:26:04.730Z"}
+{"level":"info","message":"Recognized intent: GetLoanDetails for session: 101","timestamp":"2025-09-26T07:26:04.731Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for loan details for session: 101","timestamp":"2025-09-26T07:26:04.731Z"}
+{"level":"info","message":"::1 - - [26/Sep/2025:07:26:04 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 148 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-26T07:26:04.733Z"}

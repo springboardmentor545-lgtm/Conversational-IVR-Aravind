@@ -1,6 +1,7 @@
 const acsService = require("../services/acs.service");
 const bapService = require("../services/bap.service");
 const logger = require("../../utils/logger");
+const nluService = require("../services/nlu.service");
 
 exports.handleInput = async (req, res) => {
   const { sessionId, inputType, inputValue } = req.body;
@@ -59,6 +60,73 @@ exports.handleInput = async (req, res) => {
     res.status(500).json({
       sessionId,
       responseText: "Sorry, an error occurred. Please try again later.",
+    });
+  }
+};
+
+// Updated Conversational Handler for all 10 intents
+exports.handleConversation = async (req, res) => {
+  const { sessionId, query } = req.body;
+
+  if (!sessionId || !query) {
+    return res.status(400).json({ error: "Missing sessionId or query" });
+  }
+
+  // 1. Get intent from the NLU service
+  const intent = nluService.getIntent(query);
+  logger.info(`Recognized intent: ${intent} for session: ${sessionId}`);
+
+  try {
+    let response;
+    // 2. Route based on the full list of intents
+    switch (intent) {
+      case "CheckBalance":
+        response = await bapService.getBalanceFromSpeech(sessionId);
+        break;
+      case "TalkToAgent":
+        response = await acsService.transferToAgentFromSpeech(sessionId);
+        break;
+      case "GetMiniStatement":
+        response = await bapService.getMiniStatementFromSpeech(sessionId);
+        break;
+      case "ReportLostCard":
+        response = await acsService.reportLostCardFromSpeech(sessionId);
+        break;
+      case "ActivateNewCard":
+        response = await acsService.activateNewCardFromSpeech(sessionId);
+        break;
+      case "PayUtilityBill":
+        response = await bapService.payUtilityBillFromSpeech(sessionId);
+        break;
+      case "UpdateContactDetails":
+        response = await acsService.updateContactDetailsFromSpeech(sessionId);
+        break;
+      case "GetLoanDetails":
+        response = await bapService.getLoanDetailsFromSpeech(sessionId);
+        break;
+      case "ReportSuspiciousTransaction":
+        response = await acsService.reportSuspiciousTransactionFromSpeech(
+          sessionId
+        );
+        break;
+      case "RequestEStatement":
+        response = await bapService.requestEStatementFromSpeech(sessionId);
+        break;
+      default: // Fallback for 'Unknown' intent
+        response = {
+          sessionId,
+          response: "Sorry, I didn't understand that. Can you please rephrase?",
+        };
+    }
+    res.status(200).json(response);
+  } catch (error) {
+    logger.error(
+      `Error processing conversational request for session ${sessionId}:`,
+      error
+    );
+    res.status(500).json({
+      sessionId,
+      response: "Sorry, an error occurred on our end.",
     });
   }
 };
