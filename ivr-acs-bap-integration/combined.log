@@ -340,3 +340,33 @@
 {"level":"info","message":"Recognized intent: GetLoanDetails for session: 101","timestamp":"2025-09-26T07:26:04.731Z"}
 {"level":"info","message":"BAP: Fulfilling speech request for loan details for session: 101","timestamp":"2025-09-26T07:26:04.731Z"}
 {"level":"info","message":"::1 - - [26/Sep/2025:07:26:04 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 148 \"-\" \"PostmanRuntime/7.46.1\"","timestamp":"2025-09-26T07:26:04.733Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-26T09:10:49.517Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-26T14:05:10.243Z"}
+{"level":"info","message":"Performing intent recognition for query: \"what is my balance\"","timestamp":"2025-09-26T14:05:32.041Z"}
+{"level":"info","message":"Recognized intent: CheckBalance for session: 101","timestamp":"2025-09-26T14:05:32.042Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for balance for session: 101","timestamp":"2025-09-26T14:05:32.043Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"101","timestamp":"2025-09-26T14:05:32.096Z"}
+{"level":"info","message":"::1 - - [26/Sep/2025:14:05:32 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 65 \"-\" \"axios/1.11.0\"","timestamp":"2025-09-26T14:05:32.104Z"}
+{"level":"info","message":"::1 - - [26/Sep/2025:14:05:32 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 61 \"-\" \"PostmanRuntime/7.48.0\"","timestamp":"2025-09-26T14:05:32.113Z"}
+{"level":"info","message":"Performing intent recognition for query: \"connect me to representative\"","timestamp":"2025-09-26T14:08:55.731Z"}
+{"level":"info","message":"Recognized intent: TalkToAgent for session: 101","timestamp":"2025-09-26T14:08:55.732Z"}
+{"level":"info","message":"ACS: Fulfilling speech request for agent transfer for session: 101","timestamp":"2025-09-26T14:08:55.733Z"}
+{"level":"info","message":"::1 - - [26/Sep/2025:14:08:55 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 77 \"-\" \"PostmanRuntime/7.48.0\"","timestamp":"2025-09-26T14:08:55.734Z"}
+{"level":"info","message":"Performing intent recognition for query: \"connect me to representative\"","timestamp":"2025-09-26T14:09:14.299Z"}
+{"level":"info","message":"Recognized intent: TalkToAgent for session: 105","timestamp":"2025-09-26T14:09:14.300Z"}
+{"level":"info","message":"ACS: Fulfilling speech request for agent transfer for session: 105","timestamp":"2025-09-26T14:09:14.300Z"}
+{"level":"info","message":"::1 - - [26/Sep/2025:14:09:14 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 77 \"-\" \"PostmanRuntime/7.48.0\"","timestamp":"2025-09-26T14:09:14.302Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-26T15:38:50.097Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-26T15:39:06.985Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-26T15:39:18.572Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-26T15:39:28.554Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-26T15:39:33.157Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-26T15:39:55.802Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-26T15:40:16.817Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-26T15:40:26.150Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-26T15:40:43.509Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-09-26T15:40:50.387Z"}
+{"level":"info","message":"Performing intent recognition for query: \"connect me to representative\"","timestamp":"2025-09-26T15:45:35.305Z"}
+{"level":"info","message":"Recognized intent: TalkToAgent for session: 105","timestamp":"2025-09-26T15:45:35.307Z"}
+{"level":"info","message":"ACS: Fulfilling speech request for agent transfer for session: 105","timestamp":"2025-09-26T15:45:35.308Z"}
+{"level":"info","message":"::1 - - [26/Sep/2025:15:45:35 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 77 \"-\" \"PostmanRuntime/7.48.0\"","timestamp":"2025-09-26T15:45:35.316Z"}

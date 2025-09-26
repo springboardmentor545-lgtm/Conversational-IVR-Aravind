@@ -116,7 +116,7 @@ module.exports = {
   payUtilityBill,
   getLoanDetails,
   requestEStatement,
-  // Add the new functions to exports
+
   getBalanceFromSpeech,
   getMiniStatementFromSpeech,
   payUtilityBillFromSpeech,

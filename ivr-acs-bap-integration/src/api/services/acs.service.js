@@ -46,7 +46,7 @@ const reportSuspiciousTransaction = async (sessionId) => {
   };
 };
 
-// --- Milestone 3 Functions (new "FromSpeech" versions) ---
+// ---  Functions (new "FromSpeech" versions) ---
 
 const transferToAgentFromSpeech = async (sessionId) => {
   logger.info(
@@ -108,7 +108,7 @@ module.exports = {
   activateNewCard,
   updateContactDetails,
   reportSuspiciousTransaction,
-  // Add the new functions to exports
+
   transferToAgentFromSpeech,
   reportLostCardFromSpeech,
   activateNewCardFromSpeech,
