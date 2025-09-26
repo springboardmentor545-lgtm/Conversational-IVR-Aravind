@@ -1,6 +1,6 @@
 # API Documentation: IVR Integration Layer
 
-This document provides the complete technical reference for the IVR Integration Layer API. The API exposes two primary endpoints: one for legacy DTMF (keypress) inputs and a new one for modern conversational (speech-to-text) inputs.
+This document provides the complete technical reference for the IVR Integration Layer API. The API exposes two primary endpoints: one for legacy DTMF (keypress) inputs and a new one for modern conversational queries.
 
 ---
 
@@ -8,7 +8,7 @@ This document provides the complete technical reference for the IVR Integration 
 
 ### Bot Application Platform (BAP)
 
-The BAP is the **automated brain** 🤖 of the system. It acts as an intelligent, automated assistant responsible for understanding user requests, processing information, and providing answers for all self-service workflows.
+The BAP is the **automated brain** 🤖 of the system. It acts as an intelligent, automated assistant responsible for understanding user requests, processing information, and providing answers for all self-service scenarios.
 
 ### Azure Communication Services (ACS)
 
@@ -28,7 +28,7 @@ This endpoint handles all requests originating from a user pressing a key on the
 
 ## 2. Request Specification
 
-The API expects a JSON payload with the following structure.
+The API expects a JSON payload with the following structure:
 
 | Field              |  Type  | Required | Description                                                                |
 | ------------------ | :----: | :------: | -------------------------------------------------------------------------- |
@@ -124,21 +124,23 @@ Here are screenshots demonstrating how to test various scenarios using Postman.
 
 ---
 
-## 2. Conversational Endpoint (Milestone 3)
+## 6. Conversational Endpoint (Milestone 3)
 
 This endpoint handles natural language queries, typically from a speech-to-text engine.
 
-- **URL**: `/http://localhost:3000/api/ivr/conversation`
+- **URL**: `http://localhost:3000/api/ivr/conversation`
 - **Method**: `POST`
 
-### **Request Body**
+### Request Body
 
 | Field       |  Type  | Required | Description                                 |
 | ----------- | :----: | :------: | ------------------------------------------- |
 | `sessionId` | String |   Yes    | A unique identifier for the user's session. |
 | `query`     | String |   Yes    | The transcribed text of the user's speech.  |
 
-### **Supported Conversational Intents**
+---
+
+### Supported Conversational Intents
 
 | Intent                        | Keywords                                 | Service |
 | ----------------------------- | ---------------------------------------- | :-----: |
@@ -155,36 +157,46 @@ This endpoint handles natural language queries, typically from a speech-to-text 
 
 ---
 
-## 3. Responses
+## 7. Responses
 
 The API provides standardized JSON responses for both success and failure scenarios.
 
-### **Example Success Response**
+### Example Success Response
 
 ```json
 {
-    "sessionId": "conv-session-456",
-    "response": "Your account balance is ₹500."
+  "sessionId": "conv-session-456",
+  "response": "Your account balance is ₹500."
 }
-Example "Unknown Intent" Response
-JSON
+```
 
+### Example "Unknown Intent" Response
+
+```json
 {
-    "sessionId": "conv-session-789",
-    "response": "Sorry, I didn't understand that. Can you please rephrase?"
+  "sessionId": "conv-session-789",
+  "response": "Sorry, I didn't understand that. Can you please rephrase?"
 }
-4. Usage Examples (Postman Screenshots)
+```
+
+---
+
+## 8. Usage Examples (Postman Screenshots)
+
 Here are screenshots demonstrating how to test various scenarios.
 
-Test Case 1: Check Balance
+### Test Case 1: Check Balance
+
 ![Balance Enquiry](../assets/c1.png)
 
-Test Case 2: Talk to Agent
-![Agent Transer](../assets/c2.png)
+### Test Case 2: Talk to Agent
 
-Test Case 7: Update Contact Details
-![update contact details](../assets/c3.png)
+![Agent Transfer](../assets/c2.png)
 
-Test Case 8: Get Loan Details
+### Test Case 7: Update Contact Details
+
+![Update Contact Details](../assets/c3.png)
+
+### Test Case 8: Get Loan Details
+
 ![Loan Details](../assets/c4.png)
-```
