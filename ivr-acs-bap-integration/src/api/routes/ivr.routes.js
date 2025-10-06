@@ -6,5 +6,6 @@ const ivrController = require("../controllers/ivr.controller");
 router.post("/ivr/handle-input", ivrController.handleInput);
 
 // Endpoint for Conversational inputs
+router.post("/ivr/conversation", ivrController.handleConversation);
 
 module.exports = router;
