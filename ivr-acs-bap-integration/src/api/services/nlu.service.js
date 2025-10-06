@@ -4,8 +4,6 @@ const getIntent = (query) => {
   const lowerCaseQuery = query.toLowerCase();
   logger.info(`Performing intent recognition for query: "${lowerCaseQuery}"`);
 
-  // --- Reordered and more flexible intents ---
-
   if (lowerCaseQuery.includes("balance")) {
     return "CheckBalance";
   }
@@ -17,8 +15,6 @@ const getIntent = (query) => {
     return "TalkToAgent";
   }
 
-  // --- MOVED THIS RULE UP ---
-  // This specific rule is now checked BEFORE the general "statement" rule.
   if (
     (lowerCaseQuery.includes("email") ||
       lowerCaseQuery.includes("e-statement")) &&

@@ -4,6 +4,7 @@ const morgan = require("morgan");
 const logger = require("./src/utils/logger");
 const ivrRoutes = require("./src/api/routes/ivr.routes");
 const config = require("./src/config");
+const errorHandler = require("./src/api/middlewares/errorHandler.middleware");
 
 const app = express();
 
@@ -18,7 +19,7 @@ app.use(
 // API Routes
 app.use("/api", ivrRoutes);
 
-// Mock BAP Bot Endpoint (for demonstration)
+// Mock BAP Bot Endpoint
 app.post("/api/mock-bap-bot", (req, res) => {
   logger.info("Mock BAP Bot received request:", req.body);
   res.json({
@@ -26,6 +27,9 @@ app.post("/api/mock-bap-bot", (req, res) => {
     responseText: "Your account balance is $500",
   });
 });
+
+// Centralized Error Handler
+app.use(errorHandler);
 
 app.listen(config.port, () => {
   logger.info(`Server is running on port ${config.port}`);
