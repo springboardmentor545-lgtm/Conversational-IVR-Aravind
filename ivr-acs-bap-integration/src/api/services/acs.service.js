@@ -4,7 +4,7 @@ const transferToAgent = async (sessionId) => {
   logger.info(`Simulating ACS agent transfer for session: ${sessionId}`);
   return {
     sessionId,
-    responseText: "Please wait while I transfer you to an agent.",
+    message: "Please wait while I transfer you to an agent.",
   };
 };
 
@@ -12,7 +12,7 @@ const reportLostCard = async (sessionId) => {
   logger.info(`Simulating lost card report for session: ${sessionId}`);
   return {
     sessionId,
-    responseText:
+    message:
       "Thank you. Your card has been blocked immediately. A customer service agent will call you shortly to confirm.",
   };
 };
@@ -21,7 +21,7 @@ const activateNewCard = async (sessionId) => {
   logger.info(`Simulating new card activation for session: ${sessionId}`);
   return {
     sessionId,
-    responseText:
+    message:
       "To activate your new card, please enter the 16-digit card number followed by the hash key.",
   };
 };
@@ -30,7 +30,7 @@ const updateContactDetails = async (sessionId) => {
   logger.info(`Simulating contact detail update for session: ${sessionId}`);
   return {
     sessionId,
-    responseText:
+    message:
       "A secure link to update your contact details has been sent to your registered mobile number. Please follow the instructions in the message.",
   };
 };
@@ -41,12 +41,10 @@ const reportSuspiciousTransaction = async (sessionId) => {
   );
   return {
     sessionId,
-    responseText:
+    message:
       "Thank you for reporting this. A temporary hold has been placed on your account for security. Our fraud protection team will contact you within the next hour.",
   };
 };
-
-// ---  Functions (new "FromSpeech" versions) ---
 
 const transferToAgentFromSpeech = async (sessionId) => {
   logger.info(
@@ -54,7 +52,7 @@ const transferToAgentFromSpeech = async (sessionId) => {
   );
   return {
     sessionId,
-    response: "Connecting you to a live agent. Please hold.",
+    message: "Connecting you to a live agent. Please hold.",
   };
 };
 
@@ -64,7 +62,7 @@ const reportLostCardFromSpeech = async (sessionId) => {
   );
   return {
     sessionId,
-    response:
+    message:
       "Thank you for reporting this. Your card has been blocked immediately. An agent will call you shortly to confirm.",
   };
 };
@@ -75,7 +73,7 @@ const activateNewCardFromSpeech = async (sessionId) => {
   );
   return {
     sessionId,
-    response:
+    message:
       "To activate your new card, please say or enter the 16-digit card number.",
   };
 };
@@ -86,7 +84,7 @@ const updateContactDetailsFromSpeech = async (sessionId) => {
   );
   return {
     sessionId,
-    response:
+    message:
       "A secure link to update your contact details has been sent to your registered mobile number.",
   };
 };
@@ -97,7 +95,7 @@ const reportSuspiciousTransactionFromSpeech = async (sessionId) => {
   );
   return {
     sessionId,
-    response:
+    message:
       "Thank you for reporting this. A temporary hold has been placed on your account. Our fraud protection team will contact you within the next hour.",
   };
 };
@@ -108,7 +106,6 @@ module.exports = {
   activateNewCard,
   updateContactDetails,
   reportSuspiciousTransaction,
-
   transferToAgentFromSpeech,
   reportLostCardFromSpeech,
   activateNewCardFromSpeech,
