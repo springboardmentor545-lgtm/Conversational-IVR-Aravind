@@ -37,7 +37,7 @@ exports.handleInput = async (req, res, next) => {
       case "9":
         response = await acsService.reportSuspiciousTransaction(sessionId);
         break;
-      case "10":
+      case "0":
         response = await bapService.requestEStatement(sessionId);
         break;
       default:
