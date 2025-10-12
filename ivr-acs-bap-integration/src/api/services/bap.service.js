@@ -66,7 +66,7 @@ const getBalanceFromSpeech = async (sessionId) => {
     `BAP: Fulfilling speech request for balance for session: ${sessionId}`
   );
   const dtmfResponse = await getBalance(sessionId);
-  return { sessionId, message: dtmfResponse.message }; // Return the standardized 'message' format
+  return { sessionId, message: dtmfResponse.message };
 };
 
 const getMiniStatementFromSpeech = async (sessionId) => {

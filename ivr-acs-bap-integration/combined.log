@@ -1382,3 +1382,199 @@
 {"level":"info","message":"Processing DTMF input for session session-1759896089108: 6","timestamp":"2025-10-08T04:01:51.287Z"}
 {"level":"info","message":"Processing utility bill payment from BAP for session: session-1759896089108","timestamp":"2025-10-08T04:01:51.288Z"}
 {"level":"info","message":"::1 - - [08/Oct/2025:04:01:51 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 122 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-10-08T04:01:51.290Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-10-08T14:01:26.107Z"}
+{"level":"info","message":"::1 - - [08/Oct/2025:14:01:27 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-10-08T14:01:27.473Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-10-08T14:04:19.453Z"}
+{"level":"info","message":"Processing DTMF input for session session-1759932260198: 1","timestamp":"2025-10-08T14:05:32.931Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"session-1759932260198","timestamp":"2025-10-08T14:05:33.002Z"}
+{"level":"info","message":"::1 - - [08/Oct/2025:14:05:33 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 83 \"-\" \"axios/1.12.2\"","timestamp":"2025-10-08T14:05:33.011Z"}
+{"level":"info","message":"::1 - - [08/Oct/2025:14:05:33 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 78 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-10-08T14:05:33.020Z"}
+{"level":"info","message":"Processing DTMF input for session session-1759932260198: 2","timestamp":"2025-10-08T14:05:46.449Z"}
+{"level":"info","message":"Simulating ACS agent transfer for session: session-1759932260198","timestamp":"2025-10-08T14:05:46.450Z"}
+{"level":"info","message":"::1 - - [08/Oct/2025:14:05:46 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 95 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-10-08T14:05:46.452Z"}
+{"level":"info","message":"Processing DTMF input for session session-1759932260198: 3","timestamp":"2025-10-08T14:05:50.322Z"}
+{"level":"info","message":"Fetching mini statement from BAP for session: session-1759932260198","timestamp":"2025-10-08T14:05:50.323Z"}
+{"level":"info","message":"::1 - - [08/Oct/2025:14:05:50 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 170 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-10-08T14:05:50.327Z"}
+{"level":"info","message":"Performing intent recognition for query: \"what is my bank balance\"","timestamp":"2025-10-08T14:06:27.833Z"}
+{"level":"info","message":"Recognized intent: CheckBalance for session: session-1759932260198","timestamp":"2025-10-08T14:06:27.834Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for balance for session: session-1759932260198","timestamp":"2025-10-08T14:06:27.835Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"session-1759932260198","timestamp":"2025-10-08T14:06:27.844Z"}
+{"level":"info","message":"::1 - - [08/Oct/2025:14:06:27 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 83 \"-\" \"axios/1.12.2\"","timestamp":"2025-10-08T14:06:27.847Z"}
+{"level":"info","message":"::1 - - [08/Oct/2025:14:06:27 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 78 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-10-08T14:06:27.851Z"}
+{"level":"info","message":"Performing intent recognition for query: \"i have lost my card\"","timestamp":"2025-10-08T14:06:42.413Z"}
+{"level":"info","message":"Recognized intent: ReportLostCard for session: session-1759932260198","timestamp":"2025-10-08T14:06:42.414Z"}
+{"level":"info","message":"ACS: Fulfilling speech request for lost card for session: session-1759932260198","timestamp":"2025-10-08T14:06:42.415Z"}
+{"level":"info","message":"::1 - - [08/Oct/2025:14:06:42 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 162 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-10-08T14:06:42.417Z"}
+{"level":"info","message":"Performing intent recognition for query: \"i want to talk with human representative\"","timestamp":"2025-10-08T14:06:55.469Z"}
+{"level":"info","message":"Recognized intent: TalkToAgent for session: session-1759932260198","timestamp":"2025-10-08T14:06:55.470Z"}
+{"level":"info","message":"ACS: Fulfilling speech request for agent transfer for session: session-1759932260198","timestamp":"2025-10-08T14:06:55.471Z"}
+{"level":"info","message":"::1 - - [08/Oct/2025:14:06:55 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 94 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-10-08T14:06:55.472Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-10-08T14:22:54.319Z"}
+{"level":"info","message":"Processing DTMF input for session session-1759933374667: 2","timestamp":"2025-10-08T14:23:30.973Z"}
+{"level":"info","message":"Simulating ACS agent transfer for session: session-1759933374667","timestamp":"2025-10-08T14:23:30.973Z"}
+{"level":"info","message":"::1 - - [08/Oct/2025:14:23:30 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 95 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-10-08T14:23:30.976Z"}
+{"level":"info","message":"Processing DTMF input for session session-1759933374667: 3","timestamp":"2025-10-08T14:23:32.409Z"}
+{"level":"info","message":"Fetching mini statement from BAP for session: session-1759933374667","timestamp":"2025-10-08T14:23:32.410Z"}
+{"level":"info","message":"::1 - - [08/Oct/2025:14:23:32 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 170 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-10-08T14:23:32.411Z"}
+{"level":"info","message":"Performing intent recognition for query: \"what is my bank balance\"","timestamp":"2025-10-08T14:23:51.187Z"}
+{"level":"info","message":"Recognized intent: CheckBalance for session: session-1759933420667","timestamp":"2025-10-08T14:23:51.187Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for balance for session: session-1759933420667","timestamp":"2025-10-08T14:23:51.188Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"session-1759933420667","timestamp":"2025-10-08T14:23:51.214Z"}
+{"level":"info","message":"::1 - - [08/Oct/2025:14:23:51 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 83 \"-\" \"axios/1.12.2\"","timestamp":"2025-10-08T14:23:51.216Z"}
+{"level":"info","message":"::1 - - [08/Oct/2025:14:23:51 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 78 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-10-08T14:23:51.223Z"}
+{"level":"info","message":"Performing intent recognition for query: \"can i talk to\"","timestamp":"2025-10-08T14:24:08.871Z"}
+{"level":"info","message":"Recognized intent: Unknown for session: session-1759933420667","timestamp":"2025-10-08T14:24:08.871Z"}
+{"level":"info","message":"::1 - - [08/Oct/2025:14:24:08 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 107 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-10-08T14:24:08.872Z"}
+{"level":"info","message":"Performing intent recognition for query: \"i have lost my card can you block it temporarily\"","timestamp":"2025-10-08T14:24:21.166Z"}
+{"level":"info","message":"Recognized intent: ReportLostCard for session: session-1759933420667","timestamp":"2025-10-08T14:24:21.166Z"}
+{"level":"info","message":"ACS: Fulfilling speech request for lost card for session: session-1759933420667","timestamp":"2025-10-08T14:24:21.167Z"}
+{"level":"info","message":"::1 - - [08/Oct/2025:14:24:21 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 162 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-10-08T14:24:21.168Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-10-08T16:07:05.536Z"}
+{"level":"info","message":"Performing intent recognition for query: \"aaj today episode\"","timestamp":"2025-10-08T16:07:53.613Z"}
+{"level":"info","message":"Recognized intent: Unknown for session: session-1759939626553","timestamp":"2025-10-08T16:07:53.614Z"}
+{"level":"info","message":"::1 - - [08/Oct/2025:16:07:53 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 107 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-10-08T16:07:53.619Z"}
+{"level":"info","message":"Processing DTMF input for session session-1759939626553: 8","timestamp":"2025-10-08T16:08:39.751Z"}
+{"level":"info","message":"Fetching loan details from BAP for session: session-1759939626553","timestamp":"2025-10-08T16:08:39.752Z"}
+{"level":"info","message":"::1 - - [08/Oct/2025:16:08:39 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 165 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-10-08T16:08:39.754Z"}
+{"level":"info","message":"Performing intent recognition for query: \"speak to agent\"","timestamp":"2025-10-08T16:08:44.162Z"}
+{"level":"info","message":"Recognized intent: TalkToAgent for session: session-1759939626553","timestamp":"2025-10-08T16:08:44.163Z"}
+{"level":"info","message":"ACS: Fulfilling speech request for agent transfer for session: session-1759939626553","timestamp":"2025-10-08T16:08:44.164Z"}
+{"level":"info","message":"::1 - - [08/Oct/2025:16:08:44 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 94 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-10-08T16:08:44.166Z"}
+{"level":"info","message":"Performing intent recognition for query: \"end the call\"","timestamp":"2025-10-08T16:09:15.965Z"}
+{"level":"info","message":"Recognized intent: Unknown for session: session-1759939626553","timestamp":"2025-10-08T16:09:15.966Z"}
+{"level":"info","message":"::1 - - [08/Oct/2025:16:09:15 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 107 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-10-08T16:09:15.968Z"}
+{"level":"info","message":"Performing intent recognition for query: \"can i know my account balance\"","timestamp":"2025-10-08T16:09:42.417Z"}
+{"level":"info","message":"Recognized intent: CheckBalance for session: session-1759939765384","timestamp":"2025-10-08T16:09:42.418Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for balance for session: session-1759939765384","timestamp":"2025-10-08T16:09:42.418Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"session-1759939765384","timestamp":"2025-10-08T16:09:42.495Z"}
+{"level":"info","message":"::1 - - [08/Oct/2025:16:09:42 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 83 \"-\" \"axios/1.12.2\"","timestamp":"2025-10-08T16:09:42.496Z"}
+{"level":"info","message":"::1 - - [08/Oct/2025:16:09:42 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 78 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-10-08T16:09:42.501Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-10-08T16:16:28.737Z"}
+{"level":"info","message":"::1 - - [08/Oct/2025:16:16:29 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36\"","timestamp":"2025-10-08T16:16:29.932Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-10-09T13:52:10.825Z"}
+{"level":"info","message":"::1 - - [09/Oct/2025:13:52:12 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","timestamp":"2025-10-09T13:52:12.804Z"}
+{"level":"info","message":"Processing DTMF input for session session-1760017932282: 1","timestamp":"2025-10-09T13:53:26.210Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"session-1760017932282","timestamp":"2025-10-09T13:53:26.272Z"}
+{"level":"info","message":"::1 - - [09/Oct/2025:13:53:26 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 83 \"-\" \"axios/1.12.2\"","timestamp":"2025-10-09T13:53:26.277Z"}
+{"level":"info","message":"::1 - - [09/Oct/2025:13:53:26 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 78 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","timestamp":"2025-10-09T13:53:26.288Z"}
+{"level":"info","message":"Processing DTMF input for session session-1760017932282: 2","timestamp":"2025-10-09T13:53:52.703Z"}
+{"level":"info","message":"Simulating ACS agent transfer for session: session-1760017932282","timestamp":"2025-10-09T13:53:52.704Z"}
+{"level":"info","message":"::1 - - [09/Oct/2025:13:53:52 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 95 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","timestamp":"2025-10-09T13:53:52.707Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-10-09T14:28:34.075Z"}
+{"level":"info","message":"::1 - - [09/Oct/2025:14:28:36 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","timestamp":"2025-10-09T14:28:36.815Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-10-11T10:18:30.753Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:10:18:32 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","timestamp":"2025-10-11T10:18:32.199Z"}
+{"level":"info","message":"Performing intent recognition for query: \"what is my balance\"","timestamp":"2025-10-11T10:18:41.591Z"}
+{"level":"info","message":"Recognized intent: CheckBalance for session: session-1760177911864","timestamp":"2025-10-11T10:18:41.592Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for balance for session: session-1760177911864","timestamp":"2025-10-11T10:18:41.594Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"session-1760177911864","timestamp":"2025-10-11T10:18:41.686Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:10:18:41 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 83 \"-\" \"axios/1.12.2\"","timestamp":"2025-10-11T10:18:41.691Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:10:18:41 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 78 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","timestamp":"2025-10-11T10:18:41.698Z"}
+{"level":"info","message":"Processing DTMF input for session session-1760177911864: 2","timestamp":"2025-10-11T10:21:12.467Z"}
+{"level":"info","message":"Simulating ACS agent transfer for session: session-1760177911864","timestamp":"2025-10-11T10:21:12.468Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:10:21:12 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 95 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","timestamp":"2025-10-11T10:21:12.470Z"}
+{"level":"info","message":"Performing intent recognition for query: \"i want to activate my card\"","timestamp":"2025-10-11T10:21:18.938Z"}
+{"level":"info","message":"Recognized intent: ActivateNewCard for session: session-1760177911864","timestamp":"2025-10-11T10:21:18.939Z"}
+{"level":"info","message":"ACS: Fulfilling speech request to activate card for session: session-1760177911864","timestamp":"2025-10-11T10:21:18.941Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:10:21:18 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 122 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","timestamp":"2025-10-11T10:21:18.943Z"}
+{"level":"info","message":"Processing DTMF input for session 1213: 8","timestamp":"2025-10-11T10:24:26.531Z"}
+{"level":"info","message":"Fetching loan details from BAP for session: 1213","timestamp":"2025-10-11T10:24:26.532Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:10:24:26 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 148 \"-\" \"PostmanRuntime/7.48.0\"","timestamp":"2025-10-11T10:24:26.533Z"}
+{"level":"info","message":"Performing intent recognition for query: \"i want to talk bank manager\"","timestamp":"2025-10-11T10:24:42.693Z"}
+{"level":"info","message":"Recognized intent: Unknown for session: 105","timestamp":"2025-10-11T10:24:42.694Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:10:24:42 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 89 \"-\" \"PostmanRuntime/7.48.0\"","timestamp":"2025-10-11T10:24:42.703Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-10-11T11:30:23.808Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:11:30:24 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","timestamp":"2025-10-11T11:30:24.997Z"}
+{"level":"info","message":"Processing DTMF input for session session-1760183030193: 1","timestamp":"2025-10-11T11:44:29.791Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"session-1760183030193","timestamp":"2025-10-11T11:44:29.835Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:11:44:29 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 83 \"-\" \"axios/1.12.2\"","timestamp":"2025-10-11T11:44:29.838Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:11:44:29 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 78 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","timestamp":"2025-10-11T11:44:29.847Z"}
+{"level":"info","message":"Processing DTMF input for session session-1760183030193: 2","timestamp":"2025-10-11T11:44:38.869Z"}
+{"level":"info","message":"Simulating ACS agent transfer for session: session-1760183030193","timestamp":"2025-10-11T11:44:38.870Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:11:44:38 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 95 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","timestamp":"2025-10-11T11:44:38.871Z"}
+{"level":"info","message":"Performing intent recognition for query: \"what is my bank balance\"","timestamp":"2025-10-11T11:45:10.002Z"}
+{"level":"info","message":"Recognized intent: CheckBalance for session: session-1760183030193","timestamp":"2025-10-11T11:45:10.002Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for balance for session: session-1760183030193","timestamp":"2025-10-11T11:45:10.005Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"session-1760183030193","timestamp":"2025-10-11T11:45:10.015Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:11:45:10 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 83 \"-\" \"axios/1.12.2\"","timestamp":"2025-10-11T11:45:10.016Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:11:45:10 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 78 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","timestamp":"2025-10-11T11:45:10.019Z"}
+{"level":"info","message":"Performing intent recognition for query: \"i want to talk with an agent\"","timestamp":"2025-10-11T11:45:22.801Z"}
+{"level":"info","message":"Recognized intent: TalkToAgent for session: session-1760183030193","timestamp":"2025-10-11T11:45:22.801Z"}
+{"level":"info","message":"ACS: Fulfilling speech request for agent transfer for session: session-1760183030193","timestamp":"2025-10-11T11:45:22.802Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:11:45:22 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 94 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","timestamp":"2025-10-11T11:45:22.803Z"}
+{"level":"info","message":"Performing intent recognition for query: \"what is my bank balance\"","timestamp":"2025-10-11T11:46:54.965Z"}
+{"level":"info","message":"Recognized intent: CheckBalance for session: session-1760183165348","timestamp":"2025-10-11T11:46:54.965Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for balance for session: session-1760183165348","timestamp":"2025-10-11T11:46:54.966Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"session-1760183165348","timestamp":"2025-10-11T11:46:54.970Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:11:46:54 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 83 \"-\" \"axios/1.12.2\"","timestamp":"2025-10-11T11:46:54.972Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:11:46:54 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 78 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","timestamp":"2025-10-11T11:46:54.974Z"}
+{"level":"info","message":"Performing intent recognition for query: \"can you transfer me to live agent\"","timestamp":"2025-10-11T11:47:37.109Z"}
+{"level":"info","message":"Recognized intent: TalkToAgent for session: session-1760183249534","timestamp":"2025-10-11T11:47:37.110Z"}
+{"level":"info","message":"ACS: Fulfilling speech request for agent transfer for session: session-1760183249534","timestamp":"2025-10-11T11:47:37.110Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:11:47:37 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 94 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","timestamp":"2025-10-11T11:47:37.111Z"}
+{"level":"info","message":"Performing intent recognition for query: \"what is my bank balance\"","timestamp":"2025-10-11T11:48:50.734Z"}
+{"level":"info","message":"Recognized intent: CheckBalance for session: session-1760183293880","timestamp":"2025-10-11T11:48:50.735Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for balance for session: session-1760183293880","timestamp":"2025-10-11T11:48:50.735Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"session-1760183293880","timestamp":"2025-10-11T11:48:50.740Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:11:48:50 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 83 \"-\" \"axios/1.12.2\"","timestamp":"2025-10-11T11:48:50.742Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:11:48:50 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 78 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","timestamp":"2025-10-11T11:48:50.744Z"}
+{"level":"info","message":"Performing intent recognition for query: \"what is my bank balance\"","timestamp":"2025-10-11T11:51:00.106Z"}
+{"level":"info","message":"Recognized intent: CheckBalance for session: session-1760183293880","timestamp":"2025-10-11T11:51:00.106Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for balance for session: session-1760183293880","timestamp":"2025-10-11T11:51:00.107Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"session-1760183293880","timestamp":"2025-10-11T11:51:00.111Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:11:51:00 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 83 \"-\" \"axios/1.12.2\"","timestamp":"2025-10-11T11:51:00.130Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:11:51:00 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 78 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","timestamp":"2025-10-11T11:51:00.133Z"}
+{"level":"info","message":"Performing intent recognition for query: \"can you connect with me human representative\"","timestamp":"2025-10-11T11:51:20.377Z"}
+{"level":"info","message":"Recognized intent: TalkToAgent for session: session-1760183293880","timestamp":"2025-10-11T11:51:20.377Z"}
+{"level":"info","message":"ACS: Fulfilling speech request for agent transfer for session: session-1760183293880","timestamp":"2025-10-11T11:51:20.378Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:11:51:20 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 94 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","timestamp":"2025-10-11T11:51:20.379Z"}
+{"level":"info","message":"Performing intent recognition for query: \"what is my bank balance\"","timestamp":"2025-10-11T11:52:15.905Z"}
+{"level":"info","message":"Recognized intent: CheckBalance for session: session-1760183530586","timestamp":"2025-10-11T11:52:15.905Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for balance for session: session-1760183530586","timestamp":"2025-10-11T11:52:15.905Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"session-1760183530586","timestamp":"2025-10-11T11:52:15.909Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:11:52:15 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 83 \"-\" \"axios/1.12.2\"","timestamp":"2025-10-11T11:52:15.910Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:11:52:15 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 78 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","timestamp":"2025-10-11T11:52:15.913Z"}
+{"level":"info","message":"Performing intent recognition for query: \"i want to update my details\"","timestamp":"2025-10-11T11:52:50.394Z"}
+{"level":"info","message":"Recognized intent: UpdateContactDetails for session: session-1760183530586","timestamp":"2025-10-11T11:52:50.395Z"}
+{"level":"info","message":"ACS: Fulfilling speech request to update contact details for session: session-1760183530586","timestamp":"2025-10-11T11:52:50.395Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:11:52:50 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 142 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","timestamp":"2025-10-11T11:52:50.396Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-10-11T12:11:38.878Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:12:11:39 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","timestamp":"2025-10-11T12:11:39.982Z"}
+{"level":"info","message":"Processing DTMF input for session session-1760184699925: 1","timestamp":"2025-10-11T12:13:54.474Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"session-1760184699925","timestamp":"2025-10-11T12:13:54.525Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:12:13:54 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 83 \"-\" \"axios/1.12.2\"","timestamp":"2025-10-11T12:13:54.528Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:12:13:54 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 78 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","timestamp":"2025-10-11T12:13:54.533Z"}
+{"level":"info","message":"Processing DTMF input for session session-1760184699925: 2","timestamp":"2025-10-11T12:14:18.394Z"}
+{"level":"info","message":"Simulating ACS agent transfer for session: session-1760184699925","timestamp":"2025-10-11T12:14:18.395Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:12:14:18 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 95 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","timestamp":"2025-10-11T12:14:18.417Z"}
+{"level":"info","message":"Processing DTMF input for session session-1760184699925: 3","timestamp":"2025-10-11T12:14:23.844Z"}
+{"level":"info","message":"Fetching mini statement from BAP for session: session-1760184699925","timestamp":"2025-10-11T12:14:23.846Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:12:14:23 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 170 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","timestamp":"2025-10-11T12:14:23.848Z"}
+{"level":"info","message":"Performing intent recognition for query: \"i want to know my balance\"","timestamp":"2025-10-11T12:14:51.051Z"}
+{"level":"info","message":"Recognized intent: CheckBalance for session: session-1760184699925","timestamp":"2025-10-11T12:14:51.052Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for balance for session: session-1760184699925","timestamp":"2025-10-11T12:14:51.052Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"session-1760184699925","timestamp":"2025-10-11T12:14:51.058Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:12:14:51 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 83 \"-\" \"axios/1.12.2\"","timestamp":"2025-10-11T12:14:51.059Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:12:14:51 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 78 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","timestamp":"2025-10-11T12:14:51.063Z"}
+{"level":"info","message":"Performing intent recognition for query: \"can you connect with me an agent\"","timestamp":"2025-10-11T12:15:08.190Z"}
+{"level":"info","message":"Recognized intent: TalkToAgent for session: session-1760184699925","timestamp":"2025-10-11T12:15:08.191Z"}
+{"level":"info","message":"ACS: Fulfilling speech request for agent transfer for session: session-1760184699925","timestamp":"2025-10-11T12:15:08.192Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:12:15:08 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 94 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","timestamp":"2025-10-11T12:15:08.194Z"}
+{"level":"info","message":"Performing intent recognition for query: \"i have lost my card can you block it\"","timestamp":"2025-10-11T12:15:16.993Z"}
+{"level":"info","message":"Recognized intent: ReportLostCard for session: session-1760184699925","timestamp":"2025-10-11T12:15:16.993Z"}
+{"level":"info","message":"ACS: Fulfilling speech request for lost card for session: session-1760184699925","timestamp":"2025-10-11T12:15:16.994Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:12:15:16 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 162 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","timestamp":"2025-10-11T12:15:16.995Z"}
+{"level":"info","message":"Processing DTMF input for session 1213: 8","timestamp":"2025-10-11T12:16:07.102Z"}
+{"level":"info","message":"Fetching loan details from BAP for session: 1213","timestamp":"2025-10-11T12:16:07.103Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:12:16:07 +0000] \"POST /api/ivr/handle-input HTTP/1.1\" 200 148 \"-\" \"PostmanRuntime/7.48.0\"","timestamp":"2025-10-11T12:16:07.104Z"}
+{"level":"info","message":"Performing intent recognition for query: \"i want to talk bank manager\"","timestamp":"2025-10-11T12:16:30.074Z"}
+{"level":"info","message":"Recognized intent: Unknown for session: 105","timestamp":"2025-10-11T12:16:30.075Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:12:16:30 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 89 \"-\" \"PostmanRuntime/7.48.0\"","timestamp":"2025-10-11T12:16:30.076Z"}
+{"level":"info","message":"Performing intent recognition for query: \"i want to check balance\"","timestamp":"2025-10-11T12:16:59.625Z"}
+{"level":"info","message":"Recognized intent: CheckBalance for session: 105","timestamp":"2025-10-11T12:16:59.626Z"}
+{"level":"info","message":"BAP: Fulfilling speech request for balance for session: 105","timestamp":"2025-10-11T12:16:59.626Z"}
+{"intent":"GetBalance","level":"info","message":"Mock BAP Bot received request:","sessionId":"105","timestamp":"2025-10-11T12:16:59.631Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:12:16:59 +0000] \"POST /api/mock-bap-bot HTTP/1.1\" 200 65 \"-\" \"axios/1.12.2\"","timestamp":"2025-10-11T12:16:59.632Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:12:16:59 +0000] \"POST /api/ivr/conversation HTTP/1.1\" 200 60 \"-\" \"PostmanRuntime/7.48.0\"","timestamp":"2025-10-11T12:16:59.636Z"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"2025-10-11T13:22:53.040Z"}
+{"level":"info","message":"::1 - - [11/Oct/2025:13:22:54 +0000] \"GET /favicon.ico HTTP/1.1\" 404 150 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36\"","timestamp":"2025-10-11T13:22:54.082Z"}
